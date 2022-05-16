@@ -69,7 +69,8 @@ body {
 }
 
 .slide {
-    width: 25%;ы
+    width: 25%;
+    transition: all .2s linear;
 }
 
 .slide img {
@@ -95,4 +96,44 @@ body {
 
 input {
     display: none;
+}
+
+#slide_1:checked ~ .slider>.slider__images>.slides>.slide.first {
+    margin-left: 0;
+}
+#slide_1:checked ~ .slider>.slider__text>.slides>.slide.first {
+    margin-left: 0;
+}
+#slide_1:checked ~ .slider>.controls>.controls__item>.controls__btn.cont_1 {
+    background-color: transparent;
+}
+
+#slide_2:checked ~ .slider>.slider__images>.slides>.slide.first {
+    margin-left: -25%;
+}
+#slide_2:checked ~ .slider>.slider__text>.slides>.slide.first {
+    margin-left: -25%;
+}
+#slide_2:checked ~ .slider>.controls>.controls__item>.controls__btn.cont_2 {
+    background-color: transparent;
+}
+
+#slide_3:checked ~ .slider>.slider__images>.slides>.slide.first {
+    margin-left: -50%;
+}
+#slide_3:checked ~ .slider>.slider__text>.slides>.slide.first {
+    margin-left: -50%;
+}
+#slide_3:checked ~ .slider>.controls>.controls__item>.controls__btn.cont_3 {
+    background-color: transparent;
+}
+
+#slide_4:checked ~ .slider>.slider__images>.slides>.slide.first {
+    margin-left: -75%;
+}
+#slide_4:checked ~ .slider>.slider__text>.slides>.slide.first {
+    margin-left: -75%;
+}
+#slide_4:checked ~ .slider>.controls>.controls__item>.controls__btn.cont_4 {
+    background-color: transparent;
 }
